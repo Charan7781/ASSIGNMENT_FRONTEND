@@ -1,0 +1,111 @@
+input:focus, button:focus {
+    outline: none;
+}
+
+.app-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.app-container #title{
+    color: coral;
+}
+
+.app-container .search-box {
+    margin: 2%;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.app-container .search-box .control-label {
+    font-size: 2rem;
+}
+
+.app-container .search-box .control-input {
+    margin: 2%;
+    width: 100%;
+    border-radius: 6px;
+    border: 1px solid black;
+    padding: 1% 0;
+    font-size: 16px;
+    text-align: center;
+}
+
+.app-container .search-box .control-input:focus {
+    color: green;
+    border: 1px solid coral;
+}
+
+.app-container .search-box .control-submit, .result-container #dynamic-btns .next {
+    margin: 2%;
+    padding: 0.5em;
+    border-radius: 6px;
+    background-color: green;
+    color: white;
+    border: 1px solid greenyellow;
+    cursor: pointer;
+}
+
+.app-container .search-box .control-submit:hover, .result-container #dynamic-btns .next:hover {
+    border-color: green;
+    color: black;
+    background-color: greenyellow;
+}
+
+.result-container {
+    width: 100%;
+}
+
+.result-container #dynamic-btns {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: baseline;
+    margin: 4%;
+}
+
+.result-container #dynamic-btns .reset{
+    color: white;
+    padding: 0.5em;
+    background-color: red;
+    border: 1px solid tomato;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.result-container #dynamic-btns .reset:hover {
+    background-color: tomato;
+    border: 1px solid red;
+    color: black;
+}
+
+.result-container #results {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.result-container #results article {
+    margin: 0.5% 1%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5em;
+    color: white;
+    border: 1px solid green;
+    background-color: black;
+    border-radius: 6px;
+    text-transform: capitalize;
+    font-size: 18px;
+}
+
+.result-container #results article > * {
+    margin: 2%;
+}
+
